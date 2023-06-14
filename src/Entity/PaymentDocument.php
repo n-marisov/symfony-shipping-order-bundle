@@ -34,12 +34,12 @@ class PaymentDocument implements PaymentDocumentInterface
 
     public function getCustomer(): CompanyInterface
     {
-        // TODO: Implement getCustomer() method.
+        return new Company();
     }
 
     public function getExecutor(): CompanyInterface
     {
-        // TODO: Implement getExecutor() method.
+        return new Company();
     }
 
     public function getReason(): ?Stringable

@@ -2,7 +2,10 @@
 
 namespace Maris\SymfonyBundle\ShippingOrderBundle\Entity;
 
+use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
+use Doctrine\ORM\Mapping\GeneratedValue;
+use Doctrine\ORM\Mapping\Id;
 use Doctrine\ORM\Mapping\Table;
 use Maris\SymfonyBundle\ShippingOrderBundle\Interfaces\CompanyInterface;
 
@@ -10,6 +13,8 @@ use Maris\SymfonyBundle\ShippingOrderBundle\Interfaces\CompanyInterface;
 #[Table(name: "business")]
 class Company implements CompanyInterface
 {
+    #[Id,GeneratedValue,Column]
+    private ?int $id;
 
     /**
      * @inheritDoc
