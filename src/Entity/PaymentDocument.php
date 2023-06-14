@@ -20,7 +20,7 @@ class PaymentDocument implements PaymentDocumentInterface
     #[Id,GeneratedValue,Column]
     private ?int $id;
 
-
+    private string $number;
 
     public function getDateDocument(): DateTimeInterface
     {

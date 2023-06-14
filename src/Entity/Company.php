@@ -16,6 +16,13 @@ class Company implements CompanyInterface
     #[Id,GeneratedValue,Column]
     private ?int $id;
 
+    private string $legalForm;
+
+    private string $management;
+
+
+    private string $name;
+
     /**
      * @inheritDoc
      */
