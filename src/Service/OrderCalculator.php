@@ -19,7 +19,7 @@ class OrderCalculator
         $this->directionService = $directionService;
     }
 
-    public function createOrder( iterable $unloading , iterable $downloading ):iterable
+    public function createOrders( iterable $unloading , iterable $downloading ):iterable
     {
         $waypoints = [];
         foreach ($unloading as $value)
