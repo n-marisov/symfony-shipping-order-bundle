@@ -2,9 +2,9 @@
 
 namespace Maris\SymfonyBundle\ShippingOrderBundle;
 
-use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
+use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ShippingOrderBundle extends AbstractBundle
+class ShippingOrderBundle extends Bundle
 {
 
 }
